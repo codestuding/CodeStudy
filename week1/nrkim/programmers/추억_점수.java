@@ -1,10 +1,10 @@
-package week1.김누리.programmers;
+package week1.nrkim.programmers;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * PackageName : week6.김누리.programmers
+ * PackageName : week6.nrkim.programmers
  * FileName    : 추억_점수
  * Author      : 김누리(NRKim)
  * Date        : 2025-06-01
