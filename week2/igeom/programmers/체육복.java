@@ -13,9 +13,9 @@ public class 체육복 {
         for (int l : lost) lostSet.add(l);
         for (int r : reserve) {
             if (lostSet.contains(r)) {
-                lostSet.remove(r); // 자기가 입음
+                lostSet.remove(r);
             } else {
-                reserveSets.add(r); // 진짜 여벌 가진 사람만 남김
+                reserveSets.add(r);
             }
         }
         for(int r : reserveSets){
