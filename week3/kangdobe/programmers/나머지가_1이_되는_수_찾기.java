@@ -4,7 +4,7 @@ public class 나머지가_1이_되는_수_찾기 {
     public int solution(int n) {
         int answer = 0;
         // 나머지 연산자  % 사용하기
-        // i가 0 일때 예외 발생해서 1로 교체
+        // i = 0 일때 예외 발생해서 1로 교체
         for (int i = 1; i < n; i++) {
             if (n % i == 1) {
                 // 1이 남을때 answer에 담기
