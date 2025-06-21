@@ -6,7 +6,6 @@ public class 두개더하기 {
     public static void main(String[] args) {
         int[] numbers = {5,0,2,7};
         Set<Integer> set = new HashSet<>();
-        List<Integer> a = new ArrayList<>();
 
 
         for(int i = 0; i<=numbers.length; i++){
@@ -19,6 +18,7 @@ public class 두개더하기 {
         for(Integer s :  set){
             answer[index++] = s;
         }
+        Arrays.sort(answer);
         System.out.println(Arrays.toString(answer));
     }
 }
