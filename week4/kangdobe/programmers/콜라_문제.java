@@ -1,4 +1,6 @@
-class Solution {
+package week4.kangdobe.programmers;
+
+public class 콜라_문제 {
     public int solution(int a, int b, int n) {
         int answer = 0;
 

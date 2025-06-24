@@ -1,19 +1,53 @@
-class Solution {
+package week4.kangdobe.programmers;
+
+public class 모의고사 {
     public int[] solution(int[] answers) {
         int[] answer = {};
+        int num = 10000; // 문제 수
 
         int[] math1 = {1, 2, 3, 4, 5};                  // 수포자1
         int[] math2 = {2, 1, 2, 3, 2, 4, 2, 5};         // 수포자2
         int[] math3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};   // 수포자3
 
-        int[] answer1 = new int[];      //수포자 1 정답 보관용
-        int[] answer2 = new int[];      //수포자 2 정답 보관용
-        int[] answer3 = new int[];      //수포자 3 정답 보관용
+        // 정답 카운트
+        int cnt1 = 0;
+        int cnt2 = 0;
+        int cnt3 = 0;
 
-        // 수포자 1용 
-        for (int i = 0; i < answer.length; i++) {
-            에옹
+        for (int i = 0; i < answers.length; i++) {
+            if(answers[i] == math1[i%5]) cnt1++;
+            if(answers[i] == math2[i%8]) cnt2++;
+            if(answers[i] == math3[i%10]) cnt3++;
         }
+
+        // MAX 쓰는방법밖에 없나? 안쓰고 해보기 길이떄문에 런타임난다
+        if (cnt1 > cnt2) {
+            if (cnt1 > cnt3) {
+                answer[0] = 1;
+            } else if (cnt1 == cnt3) {
+                answer[0] = 1;
+                answer[1] = 3;
+            }
+        } else if (cnt1 == cnt2) {
+            if (cnt1 < cnt3) {
+                answer[0] = 3;
+            } else if (cnt1 == cnt3) {
+                answer[0] = 1;
+                answer[1] = 2;
+                answer[2] = 3;
+            } else if (cnt1 > cnt3) {
+                answer[0] = 1;
+                answer[1] = 2;
+            }
+        } else if (cnt1 < cnt2) {
+            if (cnt2 > cnt3) {
+                answer[0] = 2;
+            } else if (cnt2 == cnt3) {
+                answer[0] = 2;
+                answer[1] = 3;
+            }
+        }
+
 
         return answer;
     }
