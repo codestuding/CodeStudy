@@ -10,6 +10,9 @@ public class 가까운 {
             char c = s.charAt(i);
             if (lastIndex.containsKey(c)) {
                 answer[i] = i - lastIndex.get(c);
+                System.out.println(i);
+                System.out.println();
+                System.out.println("lastindex : "+lastIndex.get(c));
             } else {
                 answer[i] = -1;
             }

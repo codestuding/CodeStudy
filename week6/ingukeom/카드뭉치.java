@@ -12,7 +12,7 @@ public class 카드뭉치 {
             String[] goal ={"i", "want", "to", "drink", "water"};
             String[] cards1 = {"i", "drink", "water"};
             String[] cards2 = {"want", "to"};
-        int idx1 = 0;
+            int idx1 = 0;
             int idx2 = 0;
             for (String word : goal) {
                 if (idx1 < cards1.length && word.equals(cards1[idx1])) {
