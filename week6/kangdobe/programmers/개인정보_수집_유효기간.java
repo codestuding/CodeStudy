@@ -3,6 +3,12 @@ package week6.kangdobe.programmers;
 public class 개인정보_수집_유효기간 {
     public int[] solution(String today, String[] terms, String[] privacies) {
         int[] answer = {};
+
+        // 약관 종류 = 알파벳 대문자 (26개)
+        // 문자열 today, 약관별 유효기간 terms, 개인정보 privacies
+        // today = "YYYY.MM.DD" / terms = 공백 하나로 구분한
+        // 이거 그 hashmap 그거 써야할거같은데
+
         return answer;
     }
 }
